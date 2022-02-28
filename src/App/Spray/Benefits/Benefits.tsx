@@ -1,6 +1,7 @@
 import React from 'react'
+import { StandartComponentProps } from '../../App'
 
-const Benefits = () => {
+const Benefits = (props: StandartComponentProps) => {
   return <div>Benefits</div>
 }
 

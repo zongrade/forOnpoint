@@ -1,0 +1,192 @@
+.rightSmallBacteria {
+  position: absolute;
+  top: 12vh;
+  left: 70vw;
+  height: 10vh;
+  z-index: 2;
+  width: 11vw;
+  animation: rightSmallBacteriaMove 25s ease infinite forwards;
+  background: url('../../../assets/RightSmallBacteria.svg') no-repeat;
+}
+@keyframes rightSmallBacteriaMove {
+  30% {
+    top: 10vh;
+    left: 60vw;
+    transform: rotate3d(0, 0, 1, 30deg);
+  }
+  50% {
+    transform: rotate3d(0, 0, 1, -0.3turn);
+    top: 15vh;
+    left: 65vw;
+  }
+  75% {
+    transform: rotate3d(0, 0, 1, 120deg);
+  }
+  100% {
+    transform: rotate3d(0, 0, 1, 0);
+  }
+}
+.rightBacteria {
+  position: absolute;
+  top: 30vh;
+  right: 5vw;
+  height: 19vh;
+  width: 19vw;
+  animation: rightBacteriaMove 29s ease infinite forwards 0.5s;
+  z-index: 2;
+  background: url('../../../assets/RightBlueBacteria.svg') no-repeat;
+}
+@keyframes rightBacteriaMove {
+  30% {
+    top: 35vh;
+    right: 17vw;
+    transform: rotate3d(0, 0, 1, 30deg);
+  }
+  50% {
+    transform: rotate3d(0, 0, 1, -0.3turn);
+    top: 10vh;
+    right: 7vw;
+  }
+  75% {
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+  100% {
+    transform: rotate3d(0, 0, 1, 0);
+  }
+}
+.centerBigBacteria {
+  position: absolute;
+  top: 90vh;
+  right: 70vw;
+  height: 25vh;
+  width: 25vw;
+  animation: centerBigBacteria 25s ease infinite forwards 0.2s;
+  background: url('../../../assets/BigCenterBacteria.svg') no-repeat;
+}
+@keyframes centerBigBacteria {
+  20% {
+    top: 90vh;
+    right: 70vw;
+  }
+  60% {
+    transform: rotate3d(0, 0, 1, -0.3turn);
+    top: 30vh;
+    right: 7vw;
+  }
+  75% {
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+  100% {
+    transform: rotate3d(0, 0, 1, 0);
+  }
+}
+.leftBacteria {
+  position: absolute;
+  top: 70vh;
+  left: 2vw;
+  height: 10vh;
+  width: 10vw;
+  animation: leftBacteria 25s ease infinite forwards 0.2s;
+  background: url('../../../assets/LeftBacteria.svg') no-repeat;
+}
+@keyframes leftBacteria {
+  30% {
+    top: 50vh;
+    left: 9vw;
+    transform: rotate3d(0, 0, 1, 30deg);
+  }
+  50% {
+    transform: rotate3d(0, 0, 1, -0.3turn);
+    top: 60vh;
+    left: 5vw;
+  }
+  88% {
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+  100% {
+    transform: rotate3d(0, 0, 1, 0);
+  }
+}
+
+.bacteriaUnderNav {
+  position: absolute;
+  left: -8vw;
+  height: 10vh;
+  width: 22vw;
+  top: 8vh;
+  background: url('../../../assets/BacteriaUnderProject.svg') right no-repeat;
+  background-size: cover;
+}
+.pinkSperm {
+  position: absolute;
+  height: 20vh;
+  top: 17vh;
+  right: 0;
+  width: 55vw;
+  background: url('../../../assets/PinkSperm.svg') right no-repeat;
+}
+.mainFrame {
+  display: grid;
+  grid-template-rows: 10vh 70vh;
+  grid-template-columns: 70vw 28vw 2vw;
+}
+.hello {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  display: flex;
+  align-items: flex-end;
+  text-transform: uppercase;
+  padding-left: 8vw;
+  padding-bottom: 2vh;
+}
+.nonComercial {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  font-size: calc(4vh + 4vw);
+  padding-left: 7vw;
+}
+.whatNext {
+  border-radius: 5vh;
+  //width: calc(10vh + 10vw);
+  height: calc(3vh + 3vw);
+  background-color: pink;
+  z-index: 20;
+}
+button {
+  position: relative;
+  top: 55%;
+  z-index: 20;
+  font-size: calc(1vh + 1vw);
+}
+button a::before {
+  background: url(../../../assets/Strelka.svg) no-repeat center;
+  position: absolute;
+  content: '';
+  display: inline-block;
+  box-shadow: 0.5vh 0.7vh 1vh 0.2vh rgba(160, 192, 217, 0.3) inset;
+  top: 1.2vh;
+  left: 2vw;
+  width: 6vh;
+  height: 6vh;
+  border-radius: 50%;
+  background-color: black;
+}
+a:visited {
+  font-size: calc(2vh + 2vw);
+  color: black;
+}
+//<-- Media -->//
+@media (orientation: landscape) {
+  .mainFrame {
+    letter-spacing: 1vw;
+  }
+  .bacteriaUnderNav {
+    height: 15vh;
+    width: 15vw;
+    left: -7vw;
+  }
+  .pinkSperm {
+    top: 9vh;
+    right: 7vw;
+  }
+}

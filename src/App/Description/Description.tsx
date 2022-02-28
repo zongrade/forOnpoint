@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { StandartComponentProps } from '../App'
 
-const Description = () => {
+const Description = (props: StandartComponentProps) => {
   return (
     <>
       <p>текст сообщения</p>

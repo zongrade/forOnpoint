@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { StandartComponentProps } from '../App'
 
-const Spray = () => {
+const Spray = (props: StandartComponentProps) => {
   return (
     <>
       <img className='absolute' src='' alt='' />
