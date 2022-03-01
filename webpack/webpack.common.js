@@ -14,7 +14,7 @@ module.exports = {
     filename: '[name].[fullhash].js',
     path: path.resolve(__dirname, '../docs'),
     clean: true,
-    publicPath: '/',
+    publicPath: './',
   },
   plugins: [
     new HtmlWebpackPlugin({
