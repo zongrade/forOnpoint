@@ -395,3 +395,12 @@
     font-size: calc(2vh + 3vw);
   }
 }
+@media (max-height: 600px) {
+  .more a::before {
+    height: calc(2vw + 2vh);
+    width: calc(2vw + 2vh);
+    top: calc(0.5vw + 0.5vh);
+    left: calc(0.5vw + 0.5vh);
+    background-position: top calc(0.15vh + 0.15vw) right 50%;
+  }
+}

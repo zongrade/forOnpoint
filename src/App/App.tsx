@@ -72,7 +72,8 @@ const App = () => {
     const prevOrNext = clientx - lastx > 0 ? 'next' : 'prev'
     const canChange =
       Math.sqrt((clientx - lastx) ** 2 + (clienty - lasty) ** 2) >
-      Math.ceil(window.innerWidth / 3)
+        Math.ceil(window.innerWidth / 3) &&
+      Math.abs(clientx - lastx) > Math.ceil(window.innerWidth / 3)
         ? true
         : false
     if (canChange) {

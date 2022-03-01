@@ -80,11 +80,13 @@
   background: url(../../../../assets/prevNext.svg) no-repeat center;
   height: calc(1.2vh + 1.2vw);
   width: calc(1.2vh + 1.2vw);
+  left: 40vw;
   transform: rotate(180deg);
 }
 .next {
   position: absolute;
   bottom: 15vh;
+  left: 60vw;
   z-index: 50;
   background: url(../../../../assets/prevNext.svg) no-repeat center;
   height: calc(1.2vh + 1.2vw);
@@ -93,6 +95,7 @@
 .firstPoint {
   position: absolute;
   bottom: 15vh;
+  left: 45vw;
   height: calc(1.2vh + 1.2vw);
   width: calc(1.2vh + 1.2vw);
   border-radius: calc(2vh + 2vw);
@@ -101,6 +104,7 @@
 .secondPoint {
   position: absolute;
   bottom: 15vh;
+  left: 55vw;
   height: calc(1.2vh + 1.2vw);
   width: calc(1.2vh + 1.2vw);
   border-radius: calc(2vh + 2vw);
