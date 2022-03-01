@@ -152,3 +152,31 @@
     left: 45vw;
   }
 }
+@media (min-width: 720px) and (min-height: 1560px) {
+  .next {
+    left: 70vw;
+  }
+  .prev {
+    left: 40vw;
+  }
+  .firstPoint {
+    left: 50vw;
+  }
+  .secondPoint {
+    left: 60vw;
+  }
+}
+@media (min-width: 1560px) and (min-height: 720px) {
+  .next {
+    left: 70vw;
+  }
+  .prev {
+    left: 40vw;
+  }
+  .firstPoint {
+    left: 50vw;
+  }
+  .secondPoint {
+    left: 60vw;
+  }
+}

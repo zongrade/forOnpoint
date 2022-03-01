@@ -204,3 +204,17 @@ a:visited {
     left: calc(0.5vw + 0.5vh);
   }
 }
+@media (min-width: 720px) and (min-height: 1560px) {
+  .whatNext a {
+    padding-left: 20%;
+  }
+  .whatNext a::before {
+    height: calc(1.8vw + 1.8vh);
+    width: calc(1.8vw + 1.8vh);
+    top: calc(0.5vw + 0.5vh);
+    left: calc(0.5vw + 0.5vh);
+  }
+  .nonComercial p {
+    font-size: calc(3vh + 4vw);
+  }
+}
