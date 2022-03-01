@@ -180,3 +180,17 @@
     left: 60vw;
   }
 }
+@media (max-width: 600px) {
+  .prev {
+    left: 40vw;
+  }
+  .next {
+    left: 70vw;
+  }
+  .firstPoint {
+    left: 50vw;
+  }
+  .secondPoint {
+    left: 60vw;
+  }
+}

@@ -204,7 +204,7 @@ a:visited {
     left: calc(0.5vw + 0.5vh);
   }
 }
-@media (min-width: 720px) and (min-height: 1560px) {
+@media (min-width: 720px) {
   .whatNext a {
     padding-left: 20%;
   }
@@ -214,7 +214,25 @@ a:visited {
     top: calc(0.5vw + 0.5vh);
     left: calc(0.5vw + 0.5vh);
   }
-  .nonComercial p {
+  .nonComercial {
     font-size: calc(3vh + 4vw);
+  }
+}
+@media (max-width: 600px) {
+  .nonComercial {
+    font-size: calc(3vh + 4vw);
+  }
+  .whatNext {
+    width: 30vw;
+    right: 2vw;
+  }
+  .whatNext a::before {
+    height: calc(1.8vw + 1.8vh);
+    width: calc(1.8vw + 1.8vh);
+    top: calc(0.5vw + 0.5vh);
+    left: calc(0.5vw + 0.5vh);
+  }
+  .whatNext a {
+    padding-left: 20%;
   }
 }

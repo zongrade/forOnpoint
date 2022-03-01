@@ -166,3 +166,8 @@ footer {
     grid-template-columns: 7vw 93vw;
   }
 }
+@media (max-width: 600px) {
+  nav {
+    grid-template-columns: 20vw 80vw;
+  }
+}

@@ -349,3 +349,49 @@
     left: calc(0.5vw + 0.5vh);
   }
 }
+@media (max-width: 600px) {
+  .brend {
+    font-size: calc(3vh + 3vw);
+  }
+  .secondLetter::after {
+    height: calc(4vh + 4vw);
+  }
+  .firstLetter::after {
+    height: calc(4vh + 4vw);
+    top: -1vh;
+  }
+  .firstLetter {
+    font-size: calc(1vh + 2vw);
+    height: 20vh;
+    width: 35vw;
+  }
+  .secondLetter {
+    font-size: calc(1vh + 2vw);
+    right: 10vw;
+    width: 30vw;
+    height: 15vh;
+  }
+  .more {
+    width: 30vw;
+    right: 10vw;
+  }
+  .more a {
+    padding-left: 7vw;
+  }
+  .more a::before {
+    height: calc(2vw + 2vh);
+    width: calc(2vw + 2vh);
+    top: calc(0.5vw + 0.5vh);
+    left: calc(0.5vw + 0.5vh);
+  }
+  .bottle {
+    height: 50vh;
+    width: 40vw;
+    left: -4vw;
+  }
+}
+@media (max-width: 300px) {
+  .brend {
+    font-size: calc(2vh + 3vw);
+  }
+}
