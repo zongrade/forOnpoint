@@ -147,23 +147,21 @@
 }
 .whatNext {
   border-radius: 5vh;
-  //width: calc(10vh + 10vw);
   height: calc(3vh + 3vw);
-  background-color: pink;
+  background-color: #ff6da4d8;
   z-index: 20;
-}
-button {
   position: relative;
   top: 55%;
   z-index: 20;
   font-size: calc(1vh + 1vw);
 }
-button a::before {
+.whatNext a::before {
   background: url(../../../assets/Strelka.svg) no-repeat center;
   position: absolute;
   content: '';
   display: inline-block;
-  box-shadow: 0.5vh 0.7vh 1vh 0.2vh rgba(160, 192, 217, 0.3) inset;
+  box-shadow: -0.2vh -0.2vh 0.7vh 0.1vh #ff6da5a6 inset,
+    0.2vh 0.2vh 0.7vh 0.2vh #ff6da5a6 inset;
   top: 1.2vh;
   left: 2vw;
   width: 6vh;
@@ -188,5 +186,21 @@ a:visited {
   .pinkSperm {
     top: 9vh;
     right: 7vw;
+  }
+}
+@media (min-width: 768px) and (min-height: 1024px) {
+  .whatNext a::before {
+    height: calc(2.5vw + 2.5vh);
+    width: calc(2.5vw + 2.5vh);
+    top: calc(0.2vw + 0.2vh);
+    left: calc(0.5vw + 0.5vh);
+  }
+}
+@media (min-width: 1024px) and (min-height: 768px) {
+  .whatNext a::before {
+    height: calc(2.5vw + 2.5vh);
+    width: calc(2.5vw + 2.5vh);
+    top: calc(0.2vw + 0.2vh);
+    left: calc(0.5vw + 0.5vh);
   }
 }

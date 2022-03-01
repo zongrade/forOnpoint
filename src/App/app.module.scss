@@ -127,7 +127,7 @@ body {
 .main {
   width: 100vw;
   height: 100vh;
-  font-size: 4vh;
+  font-size: calc(2vh + 2vw);
   display: grid;
   grid-template-rows: 90vh 10vh;
   grid-template-columns: 100vw;

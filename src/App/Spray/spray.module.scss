@@ -1,0 +1,312 @@
+.mainFrame {
+  margin-left: 30vw;
+  margin-right: 2vw;
+  height: 100%;
+  width: 68vw;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 10% 20% 50% 20%;
+}
+.benefit {
+  background-color: white;
+  border-radius: 5vh;
+  margin-left: 15vw;
+  margin-top: 15vh;
+  margin-right: 2vw;
+  height: 80%;
+  width: 83vw;
+  display: grid;
+  padding-left: 20%;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 10% 20% 50% 20%;
+  box-shadow: 0.4vh 0.4vh 0.8vh 0px rgba(34, 60, 80, 0.445);
+}
+.keyMessage {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-transform: uppercase;
+}
+.brend {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  font-size: calc(4vh + 4vw);
+  letter-spacing: calc(1vw + 1vh);
+  text-transform: uppercase;
+}
+.firstLetter {
+  grid-row-start: 3;
+  grid-row-end: 5;
+  background-color: white;
+  box-shadow: 0.4vh 0.4vh 0.8vh 0px rgba(34, 60, 80, 0.445);
+  height: 60%;
+  width: 60%;
+  border-radius: 5vh;
+  text-align: center;
+  top: 30%;
+  position: relative;
+}
+.firstLetter::after {
+  content: '';
+  position: absolute;
+  background: url(../../../assets/knife.png) no-repeat;
+  background-size: contain;
+  top: -5vh;
+  left: 5vw;
+  width: 10vh;
+  height: 10vh;
+}
+.firstLetter p {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.secondLetter {
+  background-color: white;
+  box-shadow: 0.4vh 0.4vh 0.8vh 0px rgba(34, 60, 80, 0.445);
+  height: 60%;
+  border-radius: 5vh;
+  text-align: center;
+  top: 30%;
+  position: relative;
+}
+.secondLetter p {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.secondLetter::after {
+  content: '';
+  position: absolute;
+  background: url(../../../assets/calendar.png) no-repeat;
+  background-size: contain;
+  top: -3vh;
+  left: 3vw;
+  width: 10vh;
+  height: 10vh;
+}
+.more {
+  border-radius: 5vh;
+  height: calc(3vh + 3vw);
+  background-color: #ff6da4d8;
+  z-index: 20;
+  position: relative;
+  top: 55%;
+  z-index: 20;
+  font-size: calc(1vh + 1vw);
+}
+.more a::before {
+  background: url(../../../assets/plus.svg) no-repeat center;
+  position: absolute;
+  content: '';
+  z-index: 25;
+  display: inline-block;
+  box-shadow: -0.2vh -0.2vh 0.7vh 0.1vh #ff6da5a6 inset,
+    0.2vh 0.2vh 0.7vh 0.2vh #ff6da5a6 inset;
+  top: 0.5vh;
+  left: 0.7vw;
+  width: calc(3vh + 3vw);
+  height: calc(3vh + 3vw);
+  border-radius: 50%;
+  background-color: black;
+}
+//<-- Buble -->//
+.firstBlueBubble {
+  background: url(../../../assets/BlueBubble.svg) no-repeat;
+  position: absolute;
+  z-index: 6;
+  height: 7vh;
+  width: 7vw;
+  top: 29vh;
+  left: 20vw;
+  animation: firstBubleAnimation 25s ease infinite forwards 0.1s;
+}
+.secondBlueBubble {
+  background: url(../../../assets/BlueBubble.svg) no-repeat;
+  position: absolute;
+  z-index: 6;
+  height: 4vh;
+  width: 4vw;
+  bottom: 34vh;
+  left: 2vw;
+  animation: secondBubleAnimation 25s ease infinite forwards 0.12s;
+}
+.thirdBlueBubble {
+  background: url(../../../assets/BlueBubble.svg) no-repeat;
+  position: absolute;
+  z-index: 6;
+  height: 15vh;
+  width: 15vw;
+  bottom: -7vh;
+  left: 20vw;
+  animation: thirdBubleAnimation 25s ease infinite forwards 0.07s;
+}
+.fourthBlueBubble {
+  background: url(../../../assets/BlueBubble.svg) no-repeat;
+  position: absolute;
+  z-index: 4;
+  height: 6vh;
+  width: 6vw;
+  bottom: 14vh;
+  left: 25vw;
+  animation: fourthBubleAnimation 25s ease infinite forwards 0.05s;
+}
+.fiveBlueBubble {
+  background: url(../../../assets/BlueBubble.svg) no-repeat;
+  position: absolute;
+  z-index: 4;
+  height: 5vh;
+  width: 5vw;
+  top: 18vh;
+  left: 20vw;
+  animation: fiveBubleAnimation 25s ease infinite forwards 1.3s;
+}
+.firstPinkBubble {
+  background: url(../../../assets/PinkBubble.svg) no-repeat;
+  position: absolute;
+  z-index: 4;
+  height: 4vh;
+  width: 4vw;
+  top: 35vh;
+  left: 11vw;
+  animation: sixBubleAnimation 25s ease infinite forwards;
+}
+.secondPinkBubble {
+  background: url(../../../assets/PinkBubble.svg) no-repeat;
+  position: absolute;
+  z-index: 4;
+  height: 12vh;
+  width: 12vw;
+  bottom: 42vh;
+  left: 21vw;
+  animation: sevenBubleAnimation 25s ease infinite forwards;
+}
+.thirdPinkBubble {
+  background: url(../../../assets/PinkBubble.svg) no-repeat;
+  position: absolute;
+  z-index: 6;
+  height: 8vh;
+  width: 8vw;
+  bottom: 20vh;
+  left: 7vw;
+  animation: eightBubleAnimation 25s ease infinite forwards 1s;
+}
+.bottle {
+  background: url(../../../assets/bottle.png) no-repeat;
+  bottom: 0;
+  left: 4vw;
+  background-size: cover;
+  position: absolute;
+  z-index: 5;
+  height: 90vh;
+  width: 25vw;
+}
+//<-- Animation -->//
+@keyframes firstBubleAnimation {
+  30% {
+    top: 35vh;
+    left: 15vw;
+  }
+  70% {
+    top: 32vh;
+    left: 12vw;
+  }
+}
+@keyframes secondBubleAnimation {
+  40% {
+    bottom: 28vh;
+    left: 10vw;
+  }
+  70% {
+    bottom: 38vh;
+    left: 4vw;
+  }
+}
+@keyframes thirdBubleAnimation {
+  30% {
+    bottom: -20vh;
+    left: 2vw;
+  }
+  70% {
+    bottom: 6vh;
+    left: 12vw;
+  }
+}
+@keyframes fourthBubleAnimation {
+  30% {
+    bottom: 2vh;
+    left: 35vw;
+  }
+  70% {
+    bottom: 12vh;
+    left: 20vw;
+  }
+}
+@keyframes fiveBubleAnimation {
+  30% {
+    top: 16vh;
+    left: 5vw;
+  }
+  70% {
+    top: 25vh;
+    left: 20vw;
+  }
+}
+@keyframes sixBubleAnimation {
+  30% {
+    top: 30vh;
+    left: 5vw;
+  }
+  70% {
+    bottom: 32vh;
+    left: 9vw;
+  }
+}
+@keyframes sevenBubleAnimation {
+  30% {
+    bottom: 35vh;
+    left: 25vw;
+  }
+  70% {
+    bottom: 55vh;
+    left: 22vw;
+  }
+}
+@keyframes eightBubleAnimation {
+  30% {
+    bottom: 25vh;
+    left: 15vw;
+  }
+  70% {
+    bottom: 27vh;
+    left: 4vw;
+  }
+}
+//<-- Media -->//and (orientation: landscape)
+@media (min-width: 768px) and (min-height: 1024px) {
+  .more a::before {
+    top: calc(0.5vh + 0.5vw);
+    left: calc(0.5vh + 0.5vw);
+    height: calc(2vh + 2vw);
+    width: calc(2vh + 2vw);
+  }
+  .more a {
+    padding-left: calc(1.5vh + 1.5vw);
+  }
+  .bottle {
+    background-size: cover;
+    height: 60vh;
+    width: 30vw;
+    left: 0;
+  }
+  .firstLetter::after {
+    top: -7vh;
+  }
+}
+@media (min-width: 1024px) and (min-height: 768px) {
+  .more a::before {
+    top: calc(0.5vh + 0.5vw);
+    left: calc(0.5vh + 0.5vw);
+    height: calc(2vh + 2vw);
+    width: calc(2vh + 2vw);
+  }
+}

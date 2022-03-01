@@ -1,0 +1,154 @@
+.benefits {
+}
+.first {
+}
+.second {
+}
+.third {
+}
+.fourth {
+}
+.five {
+}
+.six {
+}
+.keyMessage {
+  display: flex;
+  text-transform: uppercase;
+  align-items: flex-end;
+  letter-spacing: calc(0.4vh + 0.4vw);
+  font-size: calc(1.5vh + 1.5vw);
+}
+.text p {
+  font-size: calc(1vh + 1vw);
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.first::before {
+  content: '01';
+  font-weight: bold;
+  position: absolute;
+  top: -2vh;
+  color: rgb(24, 153, 228);
+}
+.second::before {
+  content: '02';
+  font-weight: bold;
+  position: absolute;
+  top: -2vh;
+  color: rgb(24, 153, 228);
+}
+.third::before {
+  content: '03';
+  font-weight: bold;
+  position: absolute;
+  top: -2vh;
+  color: rgb(24, 153, 228);
+}
+.fourth::before {
+  content: '04';
+  font-weight: bold;
+  position: absolute;
+  top: 0vh;
+  color: rgb(24, 153, 228);
+}
+.five::before {
+  content: '05';
+  font-weight: bold;
+  position: absolute;
+  top: -2vh;
+  color: rgb(24, 153, 228);
+}
+.six::before {
+  content: '06';
+  font-weight: bold;
+  position: absolute;
+  top: -2vh;
+  color: rgb(24, 153, 228);
+}
+.text {
+  height: 100%;
+  width: 100%;
+  text-align: left;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+.prev {
+  position: absolute;
+  bottom: 15vh;
+  background: url(../../../../assets/prevNext.svg) no-repeat center;
+  height: calc(1.2vh + 1.2vw);
+  width: calc(1.2vh + 1.2vw);
+  transform: rotate(180deg);
+}
+.next {
+  position: absolute;
+  bottom: 15vh;
+  z-index: 50;
+  background: url(../../../../assets/prevNext.svg) no-repeat center;
+  height: calc(1.2vh + 1.2vw);
+  width: calc(1.2vh + 1.2vw);
+}
+.firstPoint {
+  position: absolute;
+  bottom: 15vh;
+  height: calc(1.2vh + 1.2vw);
+  width: calc(1.2vh + 1.2vw);
+  border-radius: calc(2vh + 2vw);
+  border: calc(0.1vh + 0.1vw) solid black;
+}
+.secondPoint {
+  position: absolute;
+  bottom: 15vh;
+  height: calc(1.2vh + 1.2vw);
+  width: calc(1.2vh + 1.2vw);
+  border-radius: calc(2vh + 2vw);
+  border: calc(0.1vh + 0.1vw) solid black;
+}
+.activePopint {
+  background-color: pink;
+}
+//<-- Media -->//
+@media (min-width: 768px) and (min-height: 1024px) {
+  .prev {
+    left: 30vh;
+  }
+  .next {
+    left: 50vh;
+  }
+  .secondPoint {
+    left: 59vw;
+  }
+  .firstPoint {
+    left: 48vw;
+  }
+}
+@media (min-width: 1024px) and (min-height: 768px) {
+  .prev {
+    left: 50vh;
+  }
+  .next {
+    left: 70vh;
+  }
+  .secondPoint {
+    left: 48vw;
+  }
+  .firstPoint {
+    left: 42vw;
+  }
+}
+@media (min-width: 1920px) {
+  .prev {
+    left: 40vw;
+  }
+  .next {
+    left: 55vw;
+  }
+  .secondPoint {
+    left: 50vw;
+  }
+  .firstPoint {
+    left: 45vw;
+  }
+}

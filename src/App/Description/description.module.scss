@@ -1,0 +1,64 @@
+.description {
+  width: 80vw;
+  border-radius: 5vh;
+  margin-right: 10vw;
+}
+.emm {
+  width: 80vw;
+  height: 68vh;
+  border-radius: 5vh;
+  background-color: white;
+  box-shadow: inset 0 -1vw 0 #edeff0ec;
+}
+.text {
+  height: 100%;
+}
+.message {
+  display: flex;
+  padding-left: 5vw;
+  align-items: center;
+}
+.extraScroll {
+  direction: rtl;
+  overflow-y: scroll;
+  height: 100%;
+}
+.mainFrame {
+  margin-left: 5vw;
+  direction: ltr;
+  height: 100%;
+}
+.mainFrame p {
+  padding: 3vw;
+  text-align: left;
+}
+::-webkit-scrollbar,
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-track {
+  width: 3vw;
+  border: none;
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 6vh;
+  background-color: #cf578d;
+}
+.frame {
+  display: grid;
+  grid-template-rows: 15% 85%;
+}
+::-webkit-scrollbar-track {
+  border-radius: 1.3vw;
+  border-left: 1vw solid transparent;
+  border-right: 1vw solid transparent;
+  background-clip: padding-box;
+  background-image: url(../../../assets/ScrollLine.png);
+  background-repeat: repeat-y;
+  background-size: contain;
+}
+::-webkit-scrollbar-button,
+::-webkit-scrollbar-track-piece,
+::-webkit-scrollbar-corner,
+::-webkit-resizer {
+  display: none;
+}

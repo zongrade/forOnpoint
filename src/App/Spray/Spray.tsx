@@ -1,24 +1,26 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
 import { StandartComponentProps } from '../App'
-
-const Spray = (props: StandartComponentProps) => {
+import classes from './spray.module.scss'
+const Spray = () => {
+  const isBenefits = ['1', '2'].includes(
+    window.location.pathname[window.location.pathname.length - 1]
+  )
+    ? true
+    : false
   return (
-    <>
-      <img className='absolute' src='' alt='' />
-      <p>ключевое сообщение</p>
-      <p>
-        brend<strong>xy</strong>
-      </p>
-      <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
-      <div>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum dolores
-        vitae numquam mollitia?
-      </div>
-      <Link to='/spray/benefits'>
-        <button>Подробнее</button>
-      </Link>
-    </>
+    <div className={isBenefits ? classes.benefit : classes.mainFrame}>
+      <div className={classes.firstBlueBubble}></div>
+      <div className={classes.secondBlueBubble}></div>
+      <div className={classes.thirdBlueBubble}></div>
+      <div className={classes.fourthBlueBubble}></div>
+      <div className={classes.fiveBlueBubble}></div>
+      <div className={classes.firstPinkBubble}></div>
+      <div className={classes.secondPinkBubble}></div>
+      <div className={classes.thirdPinkBubble}></div>
+      <div className={classes.bottle}></div>
+      <Outlet></Outlet>
+    </div>
   )
 }
 
