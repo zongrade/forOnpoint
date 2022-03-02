@@ -160,12 +160,12 @@ footer {
   display: flex;
   align-items: flex-end;
 }
-//a:visited {
-//  color: black;
-//}
-//a {
-//  color: black;
-//}
+a:visited {
+  color: black;
+}
+a {
+  color: black;
+}
 //<-- Media -->//
 @media (orientation: landscape) {
   nav {

@@ -30,11 +30,12 @@
   position: absolute;
   top: 30vh;
   right: 5vw;
-  height: 19vh;
-  width: 19vw;
+  height: calc(6.5vh + 6.5vw);
+  width: calc(6.5vh + 6.5vw);
   animation: rightBacteriaMove 29s ease infinite forwards 0.5s;
   z-index: 2;
   background: url('../../../assets/RightBlueBacteria.svg') no-repeat;
+  background-size: cover;
 }
 @keyframes rightBacteriaMove {
   30% {
@@ -58,10 +59,11 @@
   position: absolute;
   top: 90vh;
   right: 70vw;
-  height: 25vh;
-  width: 25vw;
+  height: calc(9.5vh + 9.5vw);
+  width: calc(9.5vh + 9.5vw);
   animation: centerBigBacteria 25s ease infinite forwards 0.2s;
   background: url('../../../assets/BigCenterBacteria.svg') no-repeat;
+  background-size: cover;
 }
 @keyframes centerBigBacteria {
   20% {
